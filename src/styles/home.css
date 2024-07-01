@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.home{
+    height: 100vh;
+    background-color: hsla(210, 2%, 98%, 1);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+}
+
+.home-img{
+    margin-left: 90px;
+}
+
+.home-container h1{
+    color: hsla(0, 0%, 0%, 1);
+    font-size: 64px;
+    line-height: 76px;
+    font-weight: 600;
+}
+
+.home-container span{
+    color: hsla(122, 57%, 69%, 1);
+    font-size: 64px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.home-container p{
+    color: hsla(0, 0%, 44%, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.home-container button{
+    background-color: hsla(122, 57%, 69%, 1);
+    color:hsla(0, 0%, 100%, 1);
+    padding: 14px 32px 14px 32px;
+    line-height: 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.dot img{
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+@media  screen and (min-width:1220px) {
+    .home-container{
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width:1200px ){
+
+    .home-container{
+        padding: 0 120px;
+    }
+     .home-container h1{
+        font-size: 30px;
+        line-height: 15px;
+        margin-bottom: 10px;
+        line-height: 30px;
+     }
+
+     
+
+     .home-container span{
+        font-size: 30px;
+        /* line-height: 15px; */
+        
+     }
+
+     .home-img img{
+        width: 300px;
+     }
+}
+
+@media screen and (max-width:850px ){
+    .home-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .home-text{
+        text-align: center;
+        margin-bottom: 30px;
+
+
+    }
+
+    .home-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 50px;
+    }
+
+    .home-img img{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-container h1{
+        font-size: 40px;
+    }
+}
+
+
+
